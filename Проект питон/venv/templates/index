@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>PulseWave</title>
+    <style>
+      .my_button {
+        display: block;
+        width: 310px;
+        height: 40px;
+  
+      }
+      .my_button:link {
+        color: #e507ed;
+      }
+
+      .my_button:visited {
+        color: #f17bc0;
+      }
+
+      .my_button:focus {
+        border-bottom: 1px solid;
+        background: #856ce0;
+      }
+
+      .my_button:hover {
+        border-bottom: 1px solid;
+        background: #b9b9f9;
+      }
+
+      .my_button:active {
+        background: #f1eef5;
+        color: #865deb;
+      }
+      body {
+        background: #1ea1d9;
+        color: rgb(96, 199, 137);
+      }
+    </style>
+  </head>
+
+  <body>
+
+    <h1>Алгоритмы очистки пульсовой волны</h1>
+    <img src="{{ image_filename }}" ></img>
+    <a class="my_button" href="./one_sample">Фильтр среднее арифметическое: метод однократной выборки</a>
+    <a class="my_button" href="./stret_sample">Фильтр среднее арифметическое: растянутая выборка</a>
+    <a class="my_button" href="./run_middle">Фильтр бегущее среднее арифметическое</a>
+    <a class="my_button" href="./exp_run_average_adaptive">Фильтр адаптивный коэффициент</a>
+    <a class="my_button" href="./median">Медианный фильтр </a>
+    <a class="my_button" href="./kalman">Фильтр Калман </a>
+    
+  </body>
+</html>
