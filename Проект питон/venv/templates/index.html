@@ -1,0 +1,40 @@
+/*<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>PulseWave</title>
+    <style>
+        .my_button {
+        width: 310px;
+        height: 40px;
+        }
+        body { background: #1ea1d9 ;
+        color: rgb(96, 199, 137);}
+      </style>
+</head>
+
+<body>
+    
+   <h1>Алгоритмы очистки пульсовой волны</h1>
+   <form >
+    
+    <ol>
+      {% for tweet in tweets %}
+          <li>{{ tweet }}</li>
+      {% endfor %}
+    </ol>
+    <p><input type="button" value=" Фильтр среднее арифметическое " class = "my_button"></p>
+    <p><input type="button" value=" Метод однократной выборки " class = "my_button"></p>
+    <p><input type="button" value=" Фильтр растянутая выборка " class = "my_button"></p>
+    <p><input type="button" value=" Фильтр бегущее среднее арифметическое " class = "my_button"></p>
+    <p><input type="button" value=" Фильтр экспоненциальное бегущее среднее " class = "my_button"></p>
+    <p><input type="button" value=" Фильтр адаптивный коэффициент " class = "my_button"></p>
+    <p><input type="button" value=" Медианный фильтр " class = "my_button"></p>
+    <p><input type="button" value=" Фильтр Калман " class = "my_button"></p>
+    
+   </form>
+   {% for Message in messages %}
+<div>{{ message.text }}</div>
+{% endfor %}
+</body>
+</html>*/
